@@ -12,6 +12,14 @@ git commit -m "커밋 메시지" : 현재 staging area에 있는 것들 커밋�
 git help [커맨드 이름] : 사용법이 궁금한 Git 커맨드의 공식 메뉴얼 내용 출력
 앞으로 각 챕터에서 새롭게 배운 커맨드들은 이렇게 정리하고 넘어가겠습니다.
 
+
+==> github에 repository 만들고 , local에서 올림
+$ git remote add origin https://github.com/mwgoh/MathTool.git
+$ git branch -M main
+$ git push -u origin main
+
+
+
 =====================>
 이전 영상에서는 내용을 수정한 파일 중에서 커밋에 반영하고 싶은 파일은 git add를 해야한다고 했습니다. 그런데 사실 이것과 관련해서 꼭 알아야할 사실이 하나 있습니다. 이 사실을 확실히 이해하고 암기해야 앞으로 깃을 사용할 때 어려움이 없습니다. 자, 그럼 설명할게요.
 Git은 내부적으로 크게 3가지 종류의 작업 영역을 두고 동작합니다.

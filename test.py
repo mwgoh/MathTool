@@ -18,7 +18,22 @@ $ git remote add origin https://github.com/mwgoh/MathTool.git
 $ git branch -M main
 $ git push -u origin main
 
+local repository => Remote repository로 
+$ git push  수행
 
+Remote repository => local repository
+$ git pull 
+
+여기서 upstream 은 로컬과 연결된 원격 저장소를 의미해용
+즉 git push --set-upstream A B 를 하게 되면 로컬 A 저장소의 원격저장소를 B 로 지정하여 B 에 
+push 하라는 의미에용
+이렇게 이 명령을 한번 하게 되면 이제 원격저장소는 B 가 되기 때문에 다시 push 할 때 
+--set-upstream 을 쓰지 않아도 됩니당
+
+$ git remote -v  -> remote 리스트 확인
+
+원칙적으로 자신의 리모트 레포지토리에는 자신만 git push를 할 수 있습니다. 
+만약 다른 사용자도 git push를 할 수 있게 해주려면 그 사용자를 해당 리모트 레포지토리의 collaborator로 지정하면 됩니다. 
 
 =====================>
 이전 영상에서는 내용을 수정한 파일 중에서 커밋에 반영하고 싶은 파일은 git add를 해야한다고 했습니다. 그런데 사실 이것과 관련해서 꼭 알아야할 사실이 하나 있습니다. 이 사실을 확실히 이해하고 암기해야 앞으로 깃을 사용할 때 어려움이 없습니다. 자, 그럼 설명할게요.

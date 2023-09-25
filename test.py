@@ -151,3 +151,6 @@ man git-[알고 싶은 커맨드]
 
 -m 없이도 
 git commit  메세지 남기기 
+
+git log
+git show  "commit id "

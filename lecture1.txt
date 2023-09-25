@@ -1,5 +1,9 @@
-Test 
+def add(a,b):
+    return a+b
 
-
-def plus  (a, b)
-    a = a + b
+def substract(a, b):
+    return a-b
+    
+def multiply(a, b):
+    return a / b    
+    
